@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding: smooth;
+    scroll-behavior: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*color variable*/
+:root{
+    --main-color:rgb(85, 85, 244);
+    --text-color:#020102;
+    --bg-color:#FFF;
+}
+
+img{
+    width: 100%;
+}
+body{
+    color: var(--text-color);
+    margin: 0 0;
+}
+
+.container{
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: antiquewhite;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+
+#menu-icone{
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+    display: none;
+}
+
+.logo{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 700;
+    position: relative;
+    right: 24px;
+}
+
+.circle{
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: black;
+    position: relative;
+    right: 191px;
+    cursor: pointer;
+}
+
+.circle span{
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    left: 60px;
+}
+
+span{
+    color: blue;
+}
+
+.navbar{
+    display: flex;
+    column-gap: 11rem;
+    position: relative;
+    left: 145px;
+}
+
+.navbar i{
+    font-size: 3rem;
+    position: relative;
+    left: 40px;
+    color: white;
+    z-index: 1000;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    top: 10px;
+}
+
+.navbar a:hover,
+.navbar .active{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+
+.up{
+    position: relative;
+    top: 150px;
+    
+}
+
+.up .new-car{
+    margin: 0 auto;
+    border-radius: 23px;
+    width: 50%;
+    height: 180px;
+    background: rgba(255, 255, 255, 255,0.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 1);
+}
+.new-car i{
+    margin: auto;
+}
+.new-car p{
+    display: flex;
+    justify-content: center;
+    font-size: 44px;
+    position: relative;
+    top: 30px;
+    font-weight: 700;
+}
+
+.milieux{
+    position: relative;
+    top: 190px;
+}
+
+.view{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.right
+{
+    width: 60%;
+}
+
+.box,
+.box-princ{
+    border-radius: 23px ;
+    background: rgba(255, 255, 255, 255,0.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 1);
+    background-color:rgba(250, 235, 215, 0.164);
+    height: 800px;
+    margin: 2rem;
+    display: flex;
+}
+
+.box img,
+.box-princ img{
+  margin: 34px;
+  width: 564px;
+  border-radius: 12px;
+}
+
+.left input:hover{
+    opacity: 0.5;
+}
+
+.left input{
+    margin: 12px;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    font-size: 2rem;
+    top: 60px;
+    border: 1px solid  rgb(0, 0, 0, 0.2);
+    outline: none;
+    border-radius: 23px;
+    padding: 15px;
+    cursor: pointer;
+
+}
+
+.left input[type="submit"]{
+    background-color: #03A9FA;
+    color: white;
+    border: none;
+}
+
+.left h1{
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+}
+
+.left h2{
+    display: flex;
+    position: relative;
+    font-size: xx-large;
+    justify-content: center;
+}
+
+.right p{
+    display: grid;
+    text-align: center;
+    margin: 34px auto;
+    font-size: 29px;
+    color: #000000;
+} 
+
+.right p span{
+    color: var(--main-color);
+}
+@keyframes appear {
+    from {
+      opacity: 0;
+      transform: translateX(-1500PX);
+      scale: 0.5;
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0PX);
+      scale: 1;
+    }
+  }
+  .box{
+    animation: appear 3s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  .box-princ{
+    animation: appear 2s linear;
+  }
+  

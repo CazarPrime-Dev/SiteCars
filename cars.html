@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style-cars.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voiture</title>
+</head>
+<body>
+    
+    <header>
+        <div class="nav container">
+            <i class='bx bx-menu' id="menu-icone"></i>
+            <a href="index.html" class="logo">Faso<span>Cars</span></a>
+            <ul class="navbar">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="#cars" class="active">Cars</a></li>
+                <li><a href="about.html">About</a></li>
+                <i class='bx bx-basket'></i>
+                <div class="circle"><span class="num"></span></div>
+            </ul>
+        </div>
+    </header>
+
+    <section class="choix">
+        <div class="part"> <a href="new-car.html"><p>New <span>Car</span> </p></a> </div>
+        <div class="part1"><a href="used-car.html"><p>Used <span>Car</span></p></a></div>
+    </section>
+
+    <section class="cars" id="cars">
+        <div class="heading">
+            <span>OUR FLAGSHIP CARS</span>
+            <h2>We have all types of cars</h2>
+            <p>Choose the car you like. We take care of the rest</p>
+        </div>
+
+        <div class="cars-box container">
+            <div class="box">
+                <img src="img/car1.jpg" alt="">
+                <h1 onclick="popupToggle();">DETAILS</h1>
+            </div>
+            <div class="box">
+                <img src="img/car2.jpg" alt="">
+                <h1 onclick="popupToggle1();">DETAILS</h1>
+            </div>
+            <div class="box">
+                <img src="img/car3.jpg" alt="">
+                <h1 onclick="popupToggle2();">DETAILS</h1>
+            </div>
+            <div class="box">
+                <img src="img/car4.jpg" alt="">
+                <h1 onclick="popupToggle3();">DETAILS</h1>
+            </div>
+            <div class="box">
+                <img src="img/car5.jpg" alt="">
+                <h1 onclick="popupToggle4();">DETAILS</h1>
+            </div>
+            <div class="box">
+                <img src="img/car6 .jpg" alt="">
+                <h1 onclick="popupToggle5();">DETAILS</h1>
+            </div>
+        </div>
+    </section>
+
+    <!--popup section-->
+    <div id="popup">
+        <div class="content">
+            <img src="img/car1.jpg" alt="" >
+            <h1>Range Rover Sport</h1>
+            <h3>DESCRIPTION <br></h3>
+            <p style="color: black;"> <span>Design</span> : Design musclé et athlétique, calandre distinctive, phares LED élégants, silhouette dynamique. <br> <br>
+                <span>Intérieur</span> : Habitacle luxueux avec cuir, bois et accents métalliques, espace confortable pour jusqu'à sept passagers. <br> <br>
+                <span>Performances</span>: Puissants moteurs essence, diesel et hybrides, capacité tout-terrain exceptionnelle.
+            </p>
+            <div class="inputBox">
+                <input type="submit" value="BUY for $120,000" >
+                <i class='bx bx-cart-download' ></i>
+            </div>
+        </div>
+        <a class="close" onclick="popupToggle();"><img src="img/close2.png" alt="" style="width: 45px;"></a>
+    </div>
+
+    <div id="popup1">
+        <div class="content">
+            <img src="img/car2.jpg" alt="" >
+            <h1>Toyota Vios</h1>
+            <h3>DESCRIPTION</h3>
+            <p> <span>Design</span>: Design élégant et aérodynamique, calandre distinctive, phares halogènes ou LED. <br> <br>
+                <span>Intérieur</span>: Habitacle spacieux et confortable avec des matériaux de qualité, tableau de bord ergonomique. <br> <br>
+                <span>Performances</span>: Moteurs économes en carburant (essence), transmission manuelle ou automatique, conduite souple.
+                </p>
+            <div class="inputBox">
+                <input type="submit" value="BUY for $23,000">
+                <i class='bx bx-cart-download' ></i>
+            </div>
+        </div>
+        <a class="close" onclick="popupToggle1();"><img src="img/close2.png" alt="" style="width: 45px;"></a>
+    </div>
+
+    <div id="popup2">
+        <div class="content">
+            <img src="img/car3.jpg" alt="" >
+            <h1>Toyota Fortuner</h1>
+            <h3>DESCRIPTION</h3>
+            <p><span>Design</span>: Robuste et imposant, typique des SUV, avec une calandre distinctive et des phares perçants. <br> <br>
+                <span>Intérieur</span>: Habitacle spacieux et confortable, matériaux de qualité, sièges ajustables, capacité jusqu'à 7 passagers. <br> <br>
+                <span>Performances</span>: Motorisation puissante (essence ou diesel), transmission automatique ou manuelle, aptitude tout-terrain.</p>
+            <div class="inputBox">
+                <input type="submit" value="BUY for $55,000">
+                <i class='bx bx-cart-download' ></i>
+            </div>
+        </div>
+        <a class="close" onclick="popupToggle2();"><img src="img/close2.png" alt="" style="width: 45px;"></a>
+    </div>
+
+    <div id="popup3">
+        <div class="content">
+            <img src="img/car4.jpg" alt="" >
+            <h1>Audi A4</h1>
+            <h3>DESCRIPTION</h3>
+            <p> <span>Design</span>: Élégant et dynamique, ligne distincte et moderne, signature lumineuse Audi LED. <br> <br>
+                 <span>Intérieur</span>: Habillage raffiné, matériaux de haute qualité, technologie avancée, espace confortable pour passagers. <br> <br>
+                <span>Performances</span>: Motorisations puissantes (essence ou diesel), transmission manuelle ou automatique, conduite agile.</p>
+            <div class="inputBox">
+                <input type="submit" value="BUY for $60,000">
+                <i class='bx bx-cart-download' ></i>
+            </div>
+        </div>
+        <a class="close" onclick="popupToggle3();"><img src="img/close2.png" alt="" style="width: 45px;"></a>
+    </div>
+
+    <div id="popup4">
+        <div class="content">
+            <img src="img/car5.jpg" alt="" >
+            <h1>Peugeot 1007</h1>
+            <h3>DESCRIPTION</h3>
+            <p> <span>Design</span>: Mini monospace compact avec portes coulissantes électriques innovantes. <br> <br>
+                 <span>Intérieur</span>: Habitacle modulable, sièges arrière indépendants, grand espace de chargement. <br> <br>
+                <span>Performances</span>: Motorisations essence économiques, transmission manuelle ou automatique.</p>
+            <div class="inputBox">
+                <input type="submit" value="BUY for $12,000">
+                <i class='bx bx-cart-download' ></i>
+            </div>
+        </div>
+        <a class="close" onclick="popupToggle4();"><img src="img/close2.png" alt="" style="width: 45px;"></a>
+    </div>
+
+    <div id="popup5">
+        <div class="content">
+            <img src="img/car6 .jpg" alt="" >
+            <h1>Hyundai Palisade</h1>
+            <h3>DESCRIPTION</h3>
+            <p> <span>Design</span>: SUV familial élégant et imposant, ligne fluide et moderne, signature lumineuse distinctive. <br><br>
+                 <span>Intérieur</span>: Habillage haut de gamme, espace généreux pour sept à huit passagers, options de sièges confortables. <br><br>
+                 <span>Performances</span>: Motorisation V6 puissante, transmission automatique, conduite souple et confortable.
+            </p>
+            <div class="inputBox">
+                <input type="submit" value="BUY for $70,000">
+                <i class='bx bx-cart-download' ></i>
+            </div>
+        </div>
+        <a class="close" onclick="popupToggle5();"><img src="img/close2.png" alt="" style="width: 45px;"></a>
+    </div>
+
+
+    <script src="js/scrypte.js"></script>
+
+    <footer>
+        <div class="contact">
+            <h5>Email : example@.com</h5>
+            <h5>Contact : 00226 XXXXXXXX</h5>
+        </div>
+        <div>
+            <i class='bx bxl-facebook-circle bx-lg'></i>
+            <i class='bx bxl-whatsapp bx-lg'></i>
+            <i class='bx bxl-twitter bx-lg'></i>
+        </div>
+        <p class="logo">Faso<span>Cars</span><span class="copyright"> &copy;copyright</span></p>
+    </footer>
+
+</body>
+</html>
